@@ -1,0 +1,206 @@
+/*
+Boilerplate css reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* GLOBAL STYLES */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  line-height: 1.5;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+
+
+
+html{
+    height: 100%;
+    font-family:'Red Hat Display','sans-serif';
+}
+body{
+    height: 100%;
+}
+body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    font-family:'Red Hat Display',sans-serif;
+}
+
+.card {
+    position: absolute;
+    overflow: hidden;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+    max-width: 500px;
+    height: 800px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow:0 1.9px 2.2px rgba(0, 0, 0, 0.02),
+               0 4.7px 5.3px rgba(0, 0, 0, 0.028),
+               0 8.8px 10px rgba(0, 0, 0, 0.035),
+               0 15.6px 17.9px rgba(0, 0, 0, 0.042),
+               0 29.2px 33.4px rgba(0, 0, 0, 0.05),
+               0 70px 80px rgba(0, 0, 0, 0.07)
+;
+font-family:'Red Hat Display','sans-serif';
+
+}
+img{
+    width: 100%;
+}
+
+.hero{
+    width: 100%;
+}
+
+.main{
+    padding:42px 52px
+}
+h2{
+text-align: center;
+font-size: 32px;
+font-weight: 900;
+padding-bottom: 16px;
+}
+
+p{
+    font-size: 18px;
+    color: hsl(224, 23%, 55%);
+    max-width: 420px;
+    margin-left:19px;
+    padding:0px 23px 32px 23px;
+    font-weight: 500;
+    text-align: center;
+}
+.plan{
+    background-color:  hsl(225, 100%, 98%) ;
+    padding:24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+justify-content: center;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 50%;
+    width: 52px;
+}
+
+.plan .info{
+    display: flex;
+align-items: center;
+    gap:16px;
+}
+
+.info .price {
+    font-size: 18px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.annualPlan{
+    font-weight: 900;
+    font-size: 18px;
+}
+.changePlan{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.changePlan:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+button{
+    display: block;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    border:none;
+    width:100%;
+}
+
+.payment{
+    margin-top:32px;
+}
+.primary{
+   
+   
+    padding:12px;
+    border-radius: 8px;
+   
+    color:white;
+ 
+    background-color: hsl(245, 75%, 52%);
+  
+    margin-bottom: 16px;
+}
+.ghost{
+   
+   
+    padding:12px;
+    background-color: transparent;
+    
+    color:  hsl(224, 23%, 55%);
+ 
+  
+
+}
+
+.ghost:hover{
+    color:black
+}
+.primary:hover{
+    opacity: 0.8;
+}
